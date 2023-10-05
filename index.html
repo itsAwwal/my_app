@@ -1,8 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <title>CatPhotoApp</title>
 
     </head>
     <body>
+        <h2>CatPhotoApp</h2>
+        <main>
+            <h3>Cat Photos</h3>
+            <p> Click here to view more <a href="cat_lying.jpg" target="_blank">cat Photos</a></p>
+            <img src="cat_lying.jpg"  alt="a cat lying back flat">
+            <h3> Cat Lists </h3>
+            <p> Things cats love:</p>
+            <div class="lists">
+                <ul>
+                    <li>cat nip </li>
+                    <li> laser pointers </li>
+                    <li>lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="a delicious lasagna">
+                <H3> Things Cats <strong>Hate</strong></H3>
+                <ol>
+                    <li>flea treatments</li>
+                    <li> other cats</li>
+                    <li> thunder</li>
+                </ol>
+                <a href="#" target="_blank"><img src="cats.jpg" alt="beautiful cats"></a>
+            </div>
+            <form action="/submit-cat-photo">
+                <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor"> indoor </label><br>
+                <label for="outdoor"><input type="radio" name="indoor-outdoor">outdoor</label><br>
+                
+                <label for="Loving"><input type="checkbox" id="Loving" name="Personality">Loving</label><br>
+                <label for="Lazy"><input type="checkbox" id="Lazy" name="Personality">Lazy</label><br>
+                <label for="Energetic"><input type="checkbox" id="Energetic" name="Personality" checked>Energetic</label><br>
+                <input type="text" placeholder="cat photo url" required><br>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </main>
+        <footer>
+            <p> <small>No Copyright -<a href="https://freecodecamp.org" target="_blank"> freecodeCodeCamp.org</a></small></p>
+        </footer>
         
     </body>
 </html>
